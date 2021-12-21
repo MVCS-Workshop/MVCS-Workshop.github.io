@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>ECCV2022 MVCS Challenge</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="data/default.css" rel="stylesheet" type="text/css" />
+    <meta property='og:title' content='ECCV22 MVCS Challenge. Machine Visual Common Sense: Perception, Prediction, Planning'/>
+    <meta property='og:url' content='https://csail.mit.edu/mvcs' />
+    <meta property="og:type" content="website" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="logo">
+	<h1>
+		<center>
+	    	 <span style="font-size:50%;color:#777;font-weight:normal">The first Challenge on</span><br>
+         Machine Visual Common Sense: Perception, Prediction, Planning
+		</center>
+	</h1><br>
+	<h2>
+		<center>
+      <span style="font-size:92%;color:#777;font-weight:normal">October 28 @ 
+          <a href="https://eccv2022.ecva.net/" target="_blank">ECCV 2022</a> 
+      <span style="font-size:92%;color:#777;font-weight:bold">Tel-Aviv</span>
+		</center>
+	</h2>
+	</div>
+
+  <div id="menu">
+    <center>
+      <ul>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="./schedule.html" accesskey="2">Schedule</a></li>
+        <li><a href="#challenges">Papers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </center>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+                } else {
+                        mybutton.style.display = "none";
+                          }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+      document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<div id="content">
+  <div id="tz_select">
+     <p><h2 style="color:red;">Select your time zone<br>Default: EDT</h2></p>
+    <select class="form-control"></select>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./tz_selector/timezones.full.js"></script>
+        <script>
+          function setTimezone(tz) {
+            options = {
+              timeZone: tz, 
+              month: 'short',
+              day: 'numeric',
+              hour: '2-digit', 
+              minute: '2-digit' 
+            }
+            block_options = {
+              timeZone: tz, 
+              month: 'short',
+              day: 'numeric',
+              hour: '2-digit', 
+              minute: '2-digit' 
+            }
+            schedule = {
+              "#intro_start" : new Date(Date.parse("28 Oct 08:45:00 PDT")),
+              "#intro_end": new Date(Date.parse("28 Oct 09:00:00 PDT")),
+
+              "#sec1_talk1_start" : new Date(Date.parse("28 Oct 09:00:00 PDT")),
+              "#sec1_talk1_end": new Date(Date.parse("28 Oct 09:30:00 PDT")),
+
+              "#sec1_talk2_start" : new Date(Date.parse("28 Oct 09:30:00 PDT")),
+              "#sec1_talk2_end": new Date(Date.parse("28 Oct 10:00:00 PDT")),
+
+              "#sec1_talk3_start" : new Date(Date.parse("28 Oct 10:00:00 PDT")),
+              "#sec1_talk3_end": new Date(Date.parse("28 Oct 10:30:00 PDT")),
+
+              "#break1_start" : new Date(Date.parse("28 Oct 10:30:00 PDT")),
+              "#break1_end": new Date(Date.parse("28 Oct 11:45:00 PDT")),
+
+              "#challenge1_start" : new Date(Date.parse("28 Oct 10:45:00 PDT")),
+              "#challenge1_end": new Date(Date.parse("28 Oct 11:25:00 PDT")),
+
+              "#challenge2_start" : new Date(Date.parse("28 Oct 11:25:00 PDT")),
+              "#challenge2_end": new Date(Date.parse("28 Oct 12:05:00 PDT")),              
+
+              "#lunch_start" : new Date(Date.parse("28 Oct 12:05:00 PDT")),
+              "#lunch_end": new Date(Date.parse("28 Oct 12:30:00 PDT")),
+
+              "#challenge3_start" : new Date(Date.parse("28 Oct 12:30:00 PDT")),
+              "#challenge3_end": new Date(Date.parse("28 Oct 13:10:00 PDT")),  
+
+              "#challenge4_start" : new Date(Date.parse("28 Oct 13:10:00 PDT")),
+              "#challenge4_end": new Date(Date.parse("28 Oct 13:50:00 PDT")), 
+
+              "#challenge5_start" : new Date(Date.parse("28 Oct 13:50:00 PDT")),
+              "#challenge5_end": new Date(Date.parse("28 Oct 14:30:00 PDT")), 
+
+              "#break2_start" : new Date(Date.parse("28 Oct 14:30:00 PDT")),
+              "#break2_end": new Date(Date.parse("28 Oct 14:45:00 PDT")),
+
+              "#sec2_talk1_start" : new Date(Date.parse("28 Oct 14:45:00 PDT")),
+              "#sec2_talk1_end": new Date(Date.parse("28 Oct 15:15:00 PDT")),
+
+              "#sec2_talk2_start" : new Date(Date.parse("28 Oct 15:15:00 PDT")),
+              "#sec2_talk2_end": new Date(Date.parse("28 Oct 15:45:00 PDT")),
+
+              "#sec2_talk3_start" : new Date(Date.parse("28 Oct 15:45:00 PDT")),
+              "#sec2_talk3_end": new Date(Date.parse("28 Oct 16:15:00 PDT")),
+
+              "#panel_start" : new Date(Date.parse("28 Oct 2022 16:15:00 PDT")),
+              "#panel_end": new Date(Date.parse("28 Oct 2022 17:00:00 PDT")),
+
+            }
+            // blocks = {
+            //   "#sec1_start" : new Date(Date.parse("28 Oct 2021 07:10:00 PDT")),
+            //   "#sec1_end" : new Date(Date.parse("28 Oct 2021 09:05:00 PDT")),
+
+            //   "#sec2_start" : new Date(Date.parse("28 Oct 2021 09:10:00 PDT")),
+            //   "#sec2_end" : new Date(Date.parse("28 Oct 2021 11:05:00 PDT")),
+
+            //   "#sec3_start" : new Date(Date.parse("28 Oct 2021 12:30:00 PDT")),
+            //   "#sec3_end" : new Date(Date.parse("28 Oct 2021 14:25:00 PDT")),
+
+            //   "#sec4_start" : new Date(Date.parse("28 Oct 2021 14:30:00 PDT")),
+            //   "#sec4_end" : new Date(Date.parse("28 Oct 2021 16:25:00 PDT")),
+
+            //   "#poster1_start" : new Date(Date.parse("28 Oct 2021 11:10:00 PDT")),
+            //   "#poster1_end" : new Date(Date.parse("28 Oct 2021 11:40:00 PDT")),
+              
+            //   "#poster2_start" : new Date(Date.parse("28 Oct 2021 17:30:00 PDT")),
+            //   "#poster2_end" : new Date(Date.parse("28 Oct 2021 18:00:00 PDT")),
+
+            //   "#panel_start" : new Date(Date.parse("28 Oct 2021 16:30:00 PDT")),
+            //   "#panel_end" : new Date(Date.parse("28 Oct 2021 17:25:00 PDT")),
+            // }
+            var keys = Object.keys(schedule)
+            for (var i = 0; i < keys.length; ++i) {
+              $(keys[i]).html(schedule[keys[i]].toLocaleString(navigator.language, options))
+            }
+            // var keys = Object.keys(blocks)
+            // for (var i = 0; i < keys.length; ++i) {
+            //   $(keys[i]).html("<b>" + blocks[keys[i]].toLocaleString(navigator.language, block_options) + "</b>")
+            // }
+          }
+          $('select').timezones();
+          $('select').change(function() {
+            setTimezone($('select').val())
+          });
+          $(document).ready(function() {
+            setTimezone($('select').val())
+          })
+      </script>
+
+<table class="schedule" id="program">
+  <tr class="row_type_A">
+    <td width="80px">
+	    <b>Start</b>
+    </td>
+    <td width="80px">
+      <b>End</b>
+    </td>
+    <td>
+	    <b>Event</b>
+    </td>
+  </tr>
+  
+  <tr class="row_type_B">
+    <td id="intro_start"></td>
+    <td id="intro_end"></td>
+    <td>
+	    <p class="poster_title">Welcome and Introductions</p>
+    </td>
+  </tr>
+
+  
+<!-- 
+  <tr class="block">
+    <td id="sec1_start"></td>
+    <td id="sec1_end"></td>
+    <td><b> Session 1: Structural Representations for 3D Scenes </b>
+    </td>
+  </tr> -->
+  
+  <tr class="row_type_A">
+    <td id="sec1_talk1_start"></td>
+    <td id="sec1_talk1_end"></td>
+    <td>
+        <!-- <table><tr><td style="border: none"><a href="http://campar.in.tum.de/Main/HelisaDhamo" target="_blank"> <img alt src="data/helisa.jpg" height="140"/></a></td> -->
+        <p class="poster_title">Invited Speaker 1</p>
+    </td>
+  </tr>
+ 
+  <tr class="row_type_B">
+    <td id="sec1_talk2_start"></td>
+    <td id="sec1_talk2_end"></td>
+    <td>
+        <!-- <table><tr><td style="border: none"><a href="http://siyuanhuang.com/" target="_blank"> <img alt src="data/siyuan.png" height="140"/></a></td> -->
+        <p class="poster_title">Invited Speaker 2</p>
+    </td>
+  </tr>
+ 
+ <tr class="row_type_A">
+    <td id="sec1_talk3_start"></td>
+    <td id="sec1_talk3_end"></td>
+    <td>
+        <!-- <table><tr><td style="border: none"><a href="https://dritchie.github.io/" target="_blank"> <img alt src="data/daniel.jpg" height="140"/></a></td> -->
+        <p class="poster_title">Invited Speaker 3</p>
+    </td>
+  </tr>
+  
+  <tr class="row_type_A">
+    <td id="break1_start"></td>
+    <td id="break1_end"></td>
+    <td> Break 
+    </td>
+  </tr>
+
+ <tr class="row_type_A">
+    <td id="challenge1_start"></td>
+    <td id="challenge1_end"></td>
+    <td>
+        <p class="poster_title">Challenge 1 Winner Talk</p>
+    </td>
+  </tr>
+
+  <tr class="row_type_B">
+    <td id="challenge2_start"></td>
+    <td id="challenge2_end"></td>
+    <td>
+        <p class="poster_title">Challenge 2 Winner Talk</p>
+    </td>
+  </tr>
+
+  <tr class="row_type_A">
+    <td id="lunch_start"></td>
+    <td id="lunch_end"></td>
+    <td>
+        <p class="poster_title">Lunch</p>
+    </td>
+  </tr>
+
+  <tr class="row_type_B">
+    <td id="challenge3_start"></td>
+    <td id="challenge3_end"></td>
+    <td>
+        <p class="poster_title">Challenge 3 Winner Talk</p>
+    </td>
+  </tr>
+
+  <tr class="row_type_A">
+    <td id="challenge4_start"></td>
+    <td id="challenge4_end"></td>
+    <td>
+        <p class="poster_title">Challenge 4 Winner Talk</p>
+    </td>
+  </tr>
+
+  <tr class="row_type_B">
+    <td id="challenge5_start"></td>
+    <td id="challenge5_end"></td>
+    <td>
+        <p class="poster_title">Challenge 5 Winner Talk</p>
+    </td>
+  </tr>
+
+  <tr class="row_type_A">
+    <td id="break2_start"></td>
+    <td id="break2_end"></td>
+    <td>
+        Break
+    </td>
+  </tr>
+
+ <tr class="row_type_B">
+    <td id="sec2_talk1_start"></td>
+    <td id="sec2_talk1_end"></td>
+    <td>
+        <p class="poster_title">Invited Speaker 4</p>
+    </td>
+  </tr>
+
+  <tr class="row_type_A">
+    <td id="sec2_talk2_start"></td>
+    <td id="sec2_talk2_end"></td>
+    <td>
+        <p class="poster_title">Invited Speaker 5</p>
+    </td>
+  </tr>
+
+  <tr class="row_type_B">
+    <td id="sec2_talk3_start"></td>
+    <td id="sec2_talk3_end"></td>
+    <td>
+        <p class="poster_title">Invited Speaker 6</p>
+    </td>
+  </tr>
+
+  <tr class="row_type_A">
+    <td id="panel_start"></td>
+    <td id="panel_end"></td>
+    <td>
+        <p class="poster_title">Panel Discussion</p>
+    </td>
+  </tr>
+ 
+</table>
+
+</p>
+
+<h2>Contact Info</h2>
+<p>E-mail: 
+<a href="mailto:yininghong@cs.ucla.edu" target="_blank">yininghong@cs.ucla.edu</a>
+</p>
+
+<div style="clear: both;">&nbsp;</div>
+</div><br><br>
+
+</body>
+</html>
