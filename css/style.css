@@ -1,0 +1,278 @@
+* {
+    font-family: "IBM Plex Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #161616;
+}
+
+p,
+ul,
+li {
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #161616;
+}
+
+b {
+    color: #701b59;
+}
+
+.gradient {
+    background-color: #ff199b;
+    font-weight: 500 !important;
+    background-image: linear-gradient(45deg, #ff199b, #598eff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+hr {
+    margin: 80px 0;
+    border: none;
+    border-top: solid 1px #161616;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 360px;
+    overflow: none;
+    padding: 50px;
+    z-index: 999;
+    background: #f4f4f4;
+    border-right: solid 1px #5d5d5d;
+    color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header p {
+    margin: 0;
+    line-height: 1.25em;
+}
+
+#header h1 {
+    margin: 5px 0 20px 0;
+    line-height: 1.125em;
+    font-weight: 800 !important;
+    border-left: solid 3px #C637A0;
+    padding-left: 13px;
+}
+
+#header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu {
+    margin-top: 30px;
+    border-left: dotted 1px #d5d5d5;
+}
+
+#menu a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #161616;
+    border-left: solid 3px transparent;
+}
+
+#menu a:hover {
+    font-weight: 600;
+    border-left: solid 3px #C637A0;
+    color: #C637A0;
+}
+
+.up {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    font-size: 24px;
+    line-height: 24p;
+    text-decoration: none;
+}
+
+#content {
+    margin-left: 360px;
+    padding: 0 80px;
+}
+
+#top {
+    height: 10px;
+}
+
+#content h1 {
+    margin: 50px 0 30px 0;
+    border-left: solid 3px #C637A0;
+    line-height: 28px;
+    padding-left: 10px;
+    color: #C637A0;
+}
+
+.row {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    margin: 0 -10px;
+}
+
+.row > div {
+    flex: none;
+    padding: 10px 20px;
+    width: calc(50% - 10px);
+    margin: 5px;
+    overflow: hidden;
+    border-style: dotted;
+    border-width: 0.5px;
+}
+
+.row > div:hover {
+    border-style: solid;
+    background: #f4f4f4;
+}
+
+.downloadbtn {
+    display: inline-block;
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: #C637A0;
+    background: none;
+    border: solid 1px #C637A0;
+    padding: 3px 12px;
+    border-radius: 30px;
+}
+
+.downloadbtn:hover {
+    background: #C637A0;
+    color: #fff;
+}
+
+.orgs {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.orgs > div {
+    width: calc(20% - 16px);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border: solid 1px transparent;
+}
+
+.orgs > div:hover {
+    background: #f4f4f4;
+    border: solid 1px #C637A0;
+}
+
+.orgs a {
+    text-decoration: none;
+    color: #161616;
+}
+
+.orgs p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 3px;
+    0;
+    text-align: center;
+}
+
+.orgs label {
+    display: block;
+    color: #5d5d5d;
+    font-size: 13px;
+    text-align: center;
+}
+
+.orgs a > div {
+    width: 100%;
+    height: 13vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-control {
+    padding: 6px 12px;
+    border: solid 1px purple;
+    font-family: "IBM Plex Sans", sans-serif;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    border-left: solid 1px #eaeaea;
+    margin-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.timeline li {
+    position: relative;
+    margin-left: -25px;
+    font-size: 46px;
+    line-height: 16px;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.timeline p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.timeline li:before {
+    content: "•";
+    position: absolute;
+    left: -22px;
+    top: -3px;
+    font-size: 36px;
+    padding-right: 10px;
+}
+
+.timeline label {
+    display: block;
+    font-size: 14px;
+    margin: 5px 0;
+    opacity: 0.5;
+}
+
+.schedule {
+    width: 100%;
+    font-weight: 300;
+}
+
+.row_type_C {}
+
+.row_type_A {
+    background: #ffd1fa;
+    color: #161616;
+}
+
+.row_type_B {
+    background: #e6d4ff;
+    color: #161616;
+}
+
+.schedule p {
+    margin: 20px 10px;
+}
+
+.schedule span {
+    display: block;
+    margin: 5px 10px;
+}

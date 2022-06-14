@@ -1,0 +1,494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+  <head>
+    <title>ECCV2022 MVCS Challenge</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="data/default.css" rel="stylesheet" type="text/css" />
+    <meta property='og:title' content='ECCV22 MVCS Challenge. Machine Visual Common Sense: Perception, Prediction, Planning' />
+    <meta property='og:url' content='https://csail.mit.edu/mvcs' />
+    <meta property="og:type" content="website" />
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <h1>
+                <center>
+                    <span style="font-size:50%;color:#777;font-weight:normal">The first Challenge on</span><br>
+                    Machine Visual Common Sense: Perception, Prediction, Planning
+                </center>
+            </h1><br>
+            <h2>
+                <center>
+                    <span style="font-size:92%;color:#777;font-weight:normal">October 28 @
+                        <a href="https://eccv2022.ecva.net/" target="_blank">ECCV 2022</a>
+                        <span style="font-size:92%;color:#777;font-weight:bold">Tel-Aviv</span>
+                </center>
+            </h2>
+        </div>
+
+        <div id="menu">
+            <center>
+                <ul>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="./schedule.html" accesskey="2">Schedule</a></li>
+                    <li><a href="#challenges">Challenges</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </center>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+
+        <div id="content">
+
+            <h2>Introduction</h2>
+            <p>
+                Over the years, there have been a variety of visual reasoning tasks that evaluate machines’ ability to understand and reason about visual scenes. However, these benchmarks mostly focus on classification of objects and items that exist in a scene. Common sense reasoning – an understanding of what might happen next, or what gave rise to the scene – is often absent in these benchmarks. Humans, on the other hand, are highly versatile, adept in numerous high-level cognition-related visual reasoning tasks that go beyond pattern recognition and require common sense (e.g., physics, causality, functionality, psychology, etc). In order to design systems with human-like visual understanding of the world, we would like to emphasize benchmarks and tasks that evaluate common sense reasoning across a variety of domains, including but not limited to:
+            </p>
+
+            <ul>
+                <li><b>Intuitive Physics</b>: A general understanding and expectations about the physical world (e.g., how things support, collide, fall, contain, become unstable etc.)</li>
+                <li><b>Intuitive Psychology & Social Science</b>: A basic understanding of inter-relations and interaction of agents; An understanding of instrumental actions (e.g., assistance, imitation, speech etc.); The ability to reason about hidden mental variables that drive observable actions.</li>
+                <li><b>Affordance & Functionality</b>: What actions of agents can be applied to objects; What functions objects provide for the agents.</li>
+                <li><b>Causality & Counterfactual Thinking</b>: Understanding of causes and effects; Mental representations of alternatives to past or future events, actions, or states.</li>
+            </ul>
+            </p>
+
+            <h2 id="challenges">Challenges</h2>
+            <p>
+                There will be five tracks in the machine vision common sense challenge:<br>
+            </p>
+            <ul>
+                <li>Physion: This track is on the <a href="https://arxiv.org/abs/2106.08261">Physion dataset</a> accepted by NeurIPS2021 benchmark track. The Physion dataset measures machines' ability to make predictions about commonplace real world physical events, and covers a wide variety of physical phenomena – rigid and soft-body collisions, stable multi-object configurations, rolling and sliding, projectile motion.<br>
+                    Download link: <a href="https://github.com/cogtoolslab/physics-benchmarking-neurips2021">https://github.com/cogtoolslab/physics-benchmarking-neurips2021</a>
+                </li>
+                <br>
+                <li>PTR: This track is on the <a href="http://ptr.csail.mit.edu/">PTR dataset</a> accepted by NeurIPS 2021. The PTR dataset is focused on common sense reasoning on parts and objects. It includes five types of questions: concept, relation (geometric & spatial), analogy, arithmetic and physics. PTR requires machines to answer these questions based on synthetic RGBD scenes. <br>
+                    Download link: <a href="http://ptr.csail.mit.edu/">http://ptr.csail.mit.edu/</a><br>
+                    Evaluation Server: <a href="https://eval.ai/web/challenges/challenge-page/1428/overview">https://eval.ai/web/challenges/challenge-page/1428/overview</a>
+                </li>
+                <br>
+                <li>AGENT & BIB: This track is on the <a href="https://www.tshu.io/AGENT/">AGENT benchmark</a> accepted by ICML2021 and the <a href="https://openreview.net/forum?id=TFEFvU0ZV6Q">BIB benchmark</a> accepted by NeurIPS2021. AGENT is a dataset for Machine Social Common Sense. It consists of a large dataset of procedurally generated 3D animations, AGENT (Action, Goal, Efficiency, coNstraint, uTility), structured around four scenarios (goal preferences, action efficiency, unobserved constraints, and cost-reward trade-offs) that probe key concepts of core intuitive psychology. The Baby Intuitions Benchmark (BIB) challenges machines to predict the plausibility of an agent's behavior based on the underlying causes of its actions.<br>
+                    Download link: <a href="https://www.tshu.io/AGENT/">https://www.tshu.io/AGENT/</a><br>
+                    <a href="https://www.kanishkgandhi.com/bib"> https://www.kanishkgandhi.com/bib</a><br>
+                </li>
+                <br>
+                <li>CLEVRER & ComPhy: This track is the challenge on the <a href="http://clevrer.csail.mit.edu/">CLEVRER</a> accepted by ICLR2020 and <a href="https://comphyreasoning.github.io">ComPhy dataset</a> accepted by ICLR 2022. CLEVRER is a diagnostic video dataset for systematic evaluation of computational models on a wide range of reasoning tasks. Motivated by the theory of human casual judgment, CLEVRER includes four types of question: descriptive (e.g., “what color"), explanatory (”what’s responsible for"), predictive (”what will happen next"), and counterfactual (“what if"). ComPhy takes a step further and requires machines to learn the new compositional visible and hidden physical properties from only a few examples. ComPhy includes three types of questions: factual questions for the composition between visible and hidden physical properties, counterfactual questions on objects’ physical properties like mass and charge, and predictive questions for objects’ future movement. <br>
+                    Download link: <a href="http://clevrer.csail.mit.edu/#Dataset">http://clevrer.csail.mit.edu/#Dataset/</a> <a href="https://comphyreasoning.github.io/#dataset">https://comphyreasoning.github.io/#dataset</a><br>
+                    Evaluation Server: <a href="https://eval.ai/web/challenges/challenge-page/667/overview">https://eval.ai/web/challenges/challenge-page/667/overview</a>
+                </li>
+                <br>
+                <!-- <li>intPhys:  This track is the challenge on the <a href="https://intphys.com/">intPhys</a> dataset. Drawing inspiration from research in developmental psychology, this benchmark provides a set of diagnostic tests for increasingly difficult aspects of intuitive physics. The test set contains well matched videos of possible versus impossible events, and the metric consists in measuring how well the vision system can tell apart the possible from the impossible events.<br>
+Download link: 
+<a href="https://intphys.com/">https://intphys.com/</a><br>
+</li> -->
+            </ul>
+            <h2 id="organizers">Organizers</h2>
+            <center>
+
+                <table style="width:100%">
+                    <p>
+
+                        <tr>
+                            <td>
+                                <center><a href="https://evelinehong.github.io/" target="_blank"> <img alt src="data/yining.jpg" height="170" /> </a></center>
+                            </td>
+                            <td>
+                                <center><a href="https://sfish0101.bitbucket.io/" target="_blank"><img alt src="data/fish.jpg" height="170" /> </a></center>
+                            </td>
+                            <td>
+                                <center><a href="http://www.mit.edu/~k2smith/" target="_blank"> <img alt src="data/kevin.jpg" height="170" /> </a></center>
+                            </td>
+                            <td>
+                                <center><a href="https://zfchenunique.github.io/" target="_blank"><img alt src="data/zfchen.jpg" height="170" /> </a></center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <h3> Yining Hong </h3>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <h3> Fish Tung </h3>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <h3> Kevin Smith </h3>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <h3> Zhenfang Chen </h3>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <font size="2">UCLA</font>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <font size="2">MIT</font>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <font size="2">MIT</font>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <font size="2">MIT-IBM Watson AI Lab</font>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <center><a href="https://www.tshu.io/" target="_blank"> <img alt src="data/tianmin.jpg" height="170" /> </a></center>
+                            </td>
+                            <td>
+                                <center><a href="https://eliaszwang.com/" target="_blank"> <img alt src="data/eli.jpg" height="170" /> </a></center>
+                            </td>
+                            <td>
+                                <center><a href="https://www.kanishkgandhi.com" target="_blank"><img alt src="data/kanishk.jpeg" height="170" /> </a></center>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <center>
+                                    <h3> Tianmin Shu </h3>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <h3> Elias Wang </h3>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <h3> Kanishk Gandhi </h3>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <font size="2"> MIT </font>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <font size="2"> Stanford </font>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <font size="2"> Stanford </font>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+
+                    </p>
+                </table>
+            </center>
+
+            <h2 id="organizers">Senior Organizers</h2>
+            <center>
+
+                <table style="width:100%">
+                    <p>
+
+                        <tr>
+                            <td>
+                                <center><a href="http://web.mit.edu/cocosci/josh.html" target="_blank"> <img alt src="data/josh.jpeg" height="170" /> </a></center>
+                            </td>
+                            <td>
+                                <center><a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank"><img alt src="data/antonio.jpg" height="170" /> </a></center>
+                            </td>
+                            <td>
+                                <center><a href="http://stanford.edu/~yamins/" target="_blank"> <img alt src="data/dan.jpeg" height="170" /> </a></center>
+                            </td>
+                            <td>
+                                <center><a href="https://psychology.ucsd.edu/people/profiles/jefan.html" target="_blank"><img alt src="data/judith.jpg" height="170" /> </a></center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <h3> Joshua B. Tenenbaum </h3>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <h3> Antonio Torralba </h3>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <h3> Dan Yamins </h3>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <h3> Judith Fan </h3>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <font size="2">MIT</font>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <font size="2">MIT</font>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <font size="2">Stanford</font>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <font size="2">UCSD</font>
+                                </center>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <center><a href="https://people.csail.mit.edu/ganchuang" target="_blank"> <img alt src="data/chuang.jpeg" height="170" /> </a></center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <h3> Chuang Gan </h3>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <font size="2">MIT-IBM Watson AI Lab</font>
+                                </center>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </p>
+                </table>
+            </center>
+
+            <h2 id="organizers">Invited Speakers</h2>
+            <center>
+
+                <table style="width:100%">
+                    <p>
+
+                        <tr>
+                            <td>
+                                <center><a href="https://jiajunwu.com" target="_blank"> <img alt src="data/Jiajun.jpeg" height="170" /> </a></center>
+                            </td>
+                            <td>
+                                <center><a href="https://www.csail.mit.edu/person/leslie-kaelbling" target="_blank"><img alt src="data/kaelbling.jpeg" height="170" /> </a></center>
+                            </td>
+                            <td>
+                                <center><a href="https://ed.stanford.edu/faculty/nhaber" target="_blank"> <img alt src="data/nhaber.jpeg" height="170" /> </a></center>
+                            </td>
+                            <td>
+                                <center><a href="https://www.psych.ucla.edu/faculty-page/taogao" target="_blank"><img alt src="data/Gao.jpeg" height="170" /> </a></center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <h3> Jiajun Wu </h3>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <h3> Leslie Kaebling </h3>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <h3> Nick Haber </h3>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <h3> Tao Gao </h3>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <font size="2">Stanford</font>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <font size="2">MIT</font>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <font size="2">Stanford</font>
+                                </center>
+                            </td>
+                            <td>
+                                <center>
+                                    <font size="2">UCLA</font>
+                                </center>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <center><a href="https://as.nyu.edu/content/nyu-as/as/faculty/Moira-Dillon.html" target="_blank"> <img alt src="data/Moira.jpeg" height="170" /> </a></center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <h3> Moira Dillon </h3>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <font size="2">NYU</font>
+                                </center>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+
+
+
+                    </p>
+                </table>
+            </center>
+
+
+
+            <h2 id="contact">Contact Info</h2>
+            <p>E-mail:
+                <a href="mailto:yininghong@cs.ucla.edu" target="_blank">yininghong@cs.ucla.edu</a>
+            </p>
+
+            <div style="clear: both;">&nbsp;</div>
+        </div><br><br>
+
+</body></html>
