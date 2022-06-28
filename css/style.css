@@ -48,7 +48,7 @@ hr {
     top: 0;
     bottom: 0;
     width: 360px;
-    overflow: none;
+    overflow: unset;
     padding: 50px;
     z-index: 999;
     background: #f4f4f4;
@@ -101,7 +101,7 @@ hr {
     left: 20px;
     bottom: 20px;
     font-size: 24px;
-    line-height: 24p;
+    line-height: 24px;
     text-decoration: none;
 }
 
@@ -120,6 +120,26 @@ hr {
     line-height: 28px;
     padding-left: 10px;
     color: #C637A0;
+}
+
+
+/*
+Responsive design settings.
+While presenting for screen width < 768px,
+moving #header to the top
+ */
+@media only screen and (max-width: 768px) {
+    #header {
+        position: relative;
+        width: 100%;
+        height: 640px;
+        border-right: unset;
+        border-bottom: solid 1px #5d5d5d;
+
+    }
+    #content {
+        margin-left: 0;
+    }
 }
 
 .row {
@@ -187,7 +207,6 @@ hr {
     font-size: 16px;
     font-weight: 600;
     margin: 10px 0 3px;
-    0;
     text-align: center;
 }
 
