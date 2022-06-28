@@ -14,53 +14,53 @@ function setTimezone(tz) {
         minute: '2-digit'
     }
     schedule = {
-        "#intro_start": new Date(Date.parse("23 Oct 08:45:00 PDT")),
-        "#intro_end": new Date(Date.parse("23 Oct 09:00:00 PDT")),
+        "#intro_start": new Date(Date.parse("23 Oct 08:45:00 Israel")),
+        "#intro_end": new Date(Date.parse("23 Oct 09:00:00 Israel")),
 
-        "#sec1_talk1_start": new Date(Date.parse("23 Oct 09:00:00 PDT")),
-        "#sec1_talk1_end": new Date(Date.parse("23 Oct 09:30:00 PDT")),
+        "#sec1_talk1_start": new Date(Date.parse("23 Oct 09:00:00 Israel")),
+        "#sec1_talk1_end": new Date(Date.parse("23 Oct 09:30:00 Israel")),
 
-        "#sec1_talk2_start": new Date(Date.parse("23 Oct 09:30:00 PDT")),
-        "#sec1_talk2_end": new Date(Date.parse("23 Oct 10:00:00 PDT")),
+        "#sec1_talk2_start": new Date(Date.parse("23 Oct 09:30:00 Israel")),
+        "#sec1_talk2_end": new Date(Date.parse("23 Oct 10:00:00 Israel")),
 
-        "#sec1_talk3_start": new Date(Date.parse("23 Oct 10:00:00 PDT")),
-        "#sec1_talk3_end": new Date(Date.parse("23 Oct 10:30:00 PDT")),
+        "#sec1_talk3_start": new Date(Date.parse("23 Oct 10:00:00 Israel")),
+        "#sec1_talk3_end": new Date(Date.parse("23 Oct 10:30:00 Israel")),
 
-        "#break1_start": new Date(Date.parse("23 Oct 10:30:00 PDT")),
-        "#break1_end": new Date(Date.parse("23 Oct 11:45:00 PDT")),
+        "#break1_start": new Date(Date.parse("23 Oct 10:30:00 Israel")),
+        "#break1_end": new Date(Date.parse("23 Oct 11:45:00 Israel")),
 
-        "#challenge1_start": new Date(Date.parse("23 Oct 10:45:00 PDT")),
-        "#challenge1_end": new Date(Date.parse("23 Oct 11:25:00 PDT")),
+        "#challenge1_start": new Date(Date.parse("23 Oct 10:45:00 Israel")),
+        "#challenge1_end": new Date(Date.parse("23 Oct 11:25:00 Israel")),
 
-        "#challenge2_start": new Date(Date.parse("23 Oct 11:25:00 PDT")),
-        "#challenge2_end": new Date(Date.parse("23 Oct 12:05:00 PDT")),
+        "#challenge2_start": new Date(Date.parse("23 Oct 11:25:00 Israel")),
+        "#challenge2_end": new Date(Date.parse("23 Oct 12:05:00 Israel")),
 
-        "#lunch_start": new Date(Date.parse("23 Oct 12:05:00 PDT")),
-        "#lunch_end": new Date(Date.parse("23 Oct 12:30:00 PDT")),
+        "#lunch_start": new Date(Date.parse("23 Oct 12:05:00 Israel")),
+        "#lunch_end": new Date(Date.parse("23 Oct 12:30:00 Israel")),
 
-        "#challenge3_start": new Date(Date.parse("23 Oct 12:30:00 PDT")),
-        "#challenge3_end": new Date(Date.parse("23 Oct 13:10:00 PDT")),
+        "#challenge3_start": new Date(Date.parse("23 Oct 12:30:00 Israel")),
+        "#challenge3_end": new Date(Date.parse("23 Oct 13:10:00 Israel")),
 
-        "#challenge4_start": new Date(Date.parse("23 Oct 13:10:00 PDT")),
-        "#challenge4_end": new Date(Date.parse("23 Oct 13:50:00 PDT")),
+        "#challenge4_start": new Date(Date.parse("23 Oct 13:10:00 Israel")),
+        "#challenge4_end": new Date(Date.parse("23 Oct 13:50:00 Israel")),
 
-        "#challenge5_start": new Date(Date.parse("23 Oct 13:50:00 PDT")),
-        "#challenge5_end": new Date(Date.parse("23 Oct 14:30:00 PDT")),
+        "#challenge5_start": new Date(Date.parse("23 Oct 13:50:00 Israel")),
+        "#challenge5_end": new Date(Date.parse("23 Oct 14:30:00 Israel")),
 
-        "#break2_start": new Date(Date.parse("23 Oct 14:30:00 PDT")),
-        "#break2_end": new Date(Date.parse("23 Oct 14:45:00 PDT")),
+        "#break2_start": new Date(Date.parse("23 Oct 14:30:00 Israel")),
+        "#break2_end": new Date(Date.parse("23 Oct 14:45:00 Israel")),
 
-        "#sec2_talk1_start": new Date(Date.parse("23 Oct 14:45:00 PDT")),
-        "#sec2_talk1_end": new Date(Date.parse("23 Oct 15:15:00 PDT")),
+        "#sec2_talk1_start": new Date(Date.parse("23 Oct 14:45:00 Israel")),
+        "#sec2_talk1_end": new Date(Date.parse("23 Oct 15:15:00 Israel")),
 
-        "#sec2_talk2_start": new Date(Date.parse("23 Oct 15:15:00 PDT")),
-        "#sec2_talk2_end": new Date(Date.parse("23 Oct 15:45:00 PDT")),
+        "#sec2_talk2_start": new Date(Date.parse("23 Oct 15:15:00 Israel")),
+        "#sec2_talk2_end": new Date(Date.parse("23 Oct 15:45:00 Israel")),
 
-        "#sec2_talk3_start": new Date(Date.parse("23 Oct 15:45:00 PDT")),
-        "#sec2_talk3_end": new Date(Date.parse("23 Oct 16:15:00 PDT")),
+        "#sec2_talk3_start": new Date(Date.parse("23 Oct 15:45:00 Israel")),
+        "#sec2_talk3_end": new Date(Date.parse("23 Oct 16:15:00 Israel")),
 
-        "#panel_start": new Date(Date.parse("23 Oct 2022 16:15:00 PDT")),
-        "#panel_end": new Date(Date.parse("23 Oct 2022 17:00:00 PDT")),
+        "#panel_start": new Date(Date.parse("23 Oct 2022 16:15:00 Israel")),
+        "#panel_end": new Date(Date.parse("23 Oct 2022 17:00:00 Israel")),
 
     }
     // blocks = {
