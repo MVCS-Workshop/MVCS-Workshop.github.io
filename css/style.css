@@ -139,6 +139,7 @@ moving #header to the top
     }
     #content {
         margin-left: 0;
+        padding: 0 10px;
     }
 }
 
