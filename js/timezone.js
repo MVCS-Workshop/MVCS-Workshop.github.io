@@ -94,10 +94,10 @@ function setTimezone(tz) {
     //   $(keys[i]).html("<b>" + blocks[keys[i]].toLocaleString(navigator.language, block_options) + "</b>")
     // }
 }
-$('select').timezones();
-$('select').change(function () {
-    setTimezone($('select').val())
+$('#tz_select select').timezones();
+$('#tz_select select').change(function () {
+    setTimezone($('#tz_select select').val())
 });
 $(document).ready(function () {
-    setTimezone($('select').val())
+    setTimezone($('#tz_select select').val())
 })
