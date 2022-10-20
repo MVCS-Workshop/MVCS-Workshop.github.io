@@ -2506,7 +2506,7 @@
             // On Firefox.24 Date#getTimezoneOffset returns a floating point.
             // https://github.com/moment/moment/pull/1871
 //             return Math.round(this._d.getTimezoneOffset() / 15) * 15;
-            return 480;
+            return -120;
         }
     });
 
