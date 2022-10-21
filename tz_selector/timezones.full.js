@@ -2506,7 +2506,7 @@
             // On Firefox.24 Date#getTimezoneOffset returns a floating point.
             // https://github.com/moment/moment/pull/1871
 //             return Math.round(this._d.getTimezoneOffset() / 15) * 15;
-            return -180;
+            return -120;
         }
     });
 
@@ -3266,7 +3266,7 @@
 			"America/Los_Angeles|PDT|70|0",
 			"America/Denver|MST MDT|70 60|01010101010101010101010|1BQV0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0 Rd0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0",
     		"America/Chicago|CST CDT|60 50|01010101010101010101010|1BQU0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0 Rd0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0 Op0 1zb0",
-            "Israel|GST|-30|0|",
+            "Israel|GST|-20|0|",
             "America/Sao_Paulo|BRST BRT|20 30|01010101010101010101010|1BIq0 1zd0 On0 1zd0 Rb0 1zd0 Lz0 1C10 Lz0 1C10 On0 1zd0 On0 1zd0 On0 1zd0 On0 1C10 Lz0 1C10 Lz0 1C10",
             "Atlantic/South_Georgia|GST|20|0|",
             "Atlantic/Cape_Verde|CVT|10|0|",
