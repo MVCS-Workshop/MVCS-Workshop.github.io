@@ -292,6 +292,12 @@ p.poster_title {
     color: #000;
 }
 
+p.poster_speaker {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
 span.hidden {
     display: none;
 } 
