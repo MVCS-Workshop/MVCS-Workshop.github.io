@@ -14,74 +14,74 @@ function setTimezone(tz) {
         minute: '2-digit'
     }
     schedule = {
-        "#intro_start": new Date(Date.parse("23 Oct 08:45:00 IST")),
-        "#intro_end": new Date(Date.parse("23 Oct 09:00:00 IST")),
+        "#intro_start": new Date(Date.parse("23 Oct 08:45:00 JDT")),
+        "#intro_end": new Date(Date.parse("23 Oct 09:00:00 JDT")),
 
-        "#sec1_talk1_start": new Date(Date.parse("23 Oct 09:00:00 IST")),
-        "#sec1_talk1_end": new Date(Date.parse("23 Oct 09:30:00 IST")),
+        "#sec1_talk1_start": new Date(Date.parse("23 Oct 09:00:00 JDT")),
+        "#sec1_talk1_end": new Date(Date.parse("23 Oct 09:30:00 JDT")),
 
-        "#sec1_talk2_start": new Date(Date.parse("23 Oct 09:30:00 IST")),
-        "#sec1_talk2_end": new Date(Date.parse("23 Oct 10:00:00 IST")),
+        "#sec1_talk2_start": new Date(Date.parse("23 Oct 09:30:00 JDT")),
+        "#sec1_talk2_end": new Date(Date.parse("23 Oct 10:00:00 JDT")),
 
-        "#sec1_talk3_start": new Date(Date.parse("23 Oct 10:00:00 IST")),
-        "#sec1_talk3_end": new Date(Date.parse("23 Oct 10:30:00 IST")),
+        "#sec1_talk3_start": new Date(Date.parse("23 Oct 10:00:00 JDT")),
+        "#sec1_talk3_end": new Date(Date.parse("23 Oct 10:30:00 JDT")),
 
-        "#break1_start": new Date(Date.parse("23 Oct 10:30:00 IST")),
-        "#break1_end": new Date(Date.parse("23 Oct 10:45:00 IST")),
+        "#break1_start": new Date(Date.parse("23 Oct 10:30:00 JDT")),
+        "#break1_end": new Date(Date.parse("23 Oct 10:45:00 JDT")),
 
-        "#challenge1_start": new Date(Date.parse("23 Oct 10:45:00 IST")),
-        "#challenge1_end": new Date(Date.parse("23 Oct 11:05:00 IST")),
+        "#challenge1_start": new Date(Date.parse("23 Oct 10:45:00 JDT")),
+        "#challenge1_end": new Date(Date.parse("23 Oct 11:05:00 JDT")),
 
-        "#challenge1_public_start": new Date(Date.parse("23 Oct 11:05:00 IST")),
-        "#challenge1_public_end": new Date(Date.parse("23 Oct 11:25:00 IST")),
+        "#challenge1_public_start": new Date(Date.parse("23 Oct 11:05:00 JDT")),
+        "#challenge1_public_end": new Date(Date.parse("23 Oct 11:25:00 JDT")),
 
-        "#challenge1_private_start": new Date(Date.parse("23 Oct 11:25:00 IST")),
-        "#challenge1_private_end": new Date(Date.parse("23 Oct 11:45:00 IST")),
+        "#challenge1_private_start": new Date(Date.parse("23 Oct 11:25:00 JDT")),
+        "#challenge1_private_end": new Date(Date.parse("23 Oct 11:45:00 JDT")),
 
-        "#lunch_start": new Date(Date.parse("23 Oct 11:45:00 IST")),
-        "#lunch_end": new Date(Date.parse("23 Oct 12:20:00 IST")),
+        "#lunch_start": new Date(Date.parse("23 Oct 11:45:00 JDT")),
+        "#lunch_end": new Date(Date.parse("23 Oct 12:20:00 JDT")),
 
-        "#challenge2_start": new Date(Date.parse("23 Oct 12:20:00 IST")),
-        "#challenge2_end": new Date(Date.parse("23 Oct 12:40:00 IST")),
+        "#challenge2_start": new Date(Date.parse("23 Oct 12:20:00 JDT")),
+        "#challenge2_end": new Date(Date.parse("23 Oct 12:40:00 JDT")),
 
-        "#challenge2_talk_start": new Date(Date.parse("23 Oct 12:40:00 IST")),
-        "#challenge2_talk_end": new Date(Date.parse("23 Oct 13:00:00 IST")),
+        "#challenge2_talk_start": new Date(Date.parse("23 Oct 12:40:00 JDT")),
+        "#challenge2_talk_end": new Date(Date.parse("23 Oct 13:00:00 JDT")),
 
-        "#challenge2_leaderboard_talk1_start": new Date(Date.parse("23 Oct 13:00:00 IST")),
-        "#challenge2_leaderboard_talk1_end": new Date(Date.parse("23 Oct 13:20:00 IST")),
+        "#challenge2_leaderboard_talk1_start": new Date(Date.parse("23 Oct 13:00:00 JDT")),
+        "#challenge2_leaderboard_talk1_end": new Date(Date.parse("23 Oct 13:20:00 JDT")),
 
-        "#challenge2_leaderboard_talk2_start": new Date(Date.parse("23 Oct 13:20:00 IST")),
-        "#challenge2_leaderboard_talk2_end": new Date(Date.parse("23 Oct 13:40:00 IST")),
+        "#challenge2_leaderboard_talk2_start": new Date(Date.parse("23 Oct 13:20:00 JDT")),
+        "#challenge2_leaderboard_talk2_end": new Date(Date.parse("23 Oct 13:40:00 JDT")),
 
-        "#challenge3_start": new Date(Date.parse("23 Oct 13:40:00 IST")),
-        "#challenge3_end": new Date(Date.parse("23 Oct 14:00:00 IST")),
+        "#challenge3_start": new Date(Date.parse("23 Oct 13:40:00 JDT")),
+        "#challenge3_end": new Date(Date.parse("23 Oct 14:00:00 JDT")),
 
-        "#challenge4_start": new Date(Date.parse("23 Oct 14:00:00 IST")),
-        "#challenge4_end": new Date(Date.parse("23 Oct 14:20:00 IST")),
+        "#challenge4_start": new Date(Date.parse("23 Oct 14:00:00 JDT")),
+        "#challenge4_end": new Date(Date.parse("23 Oct 14:20:00 JDT")),
 
-        "#challenge4_talk_start": new Date(Date.parse("23 Oct 14:20:00 IST")),
-        "#challenge4_talk_end": new Date(Date.parse("23 Oct 14:40:00 IST")),
+        "#challenge4_talk_start": new Date(Date.parse("23 Oct 14:20:00 JDT")),
+        "#challenge4_talk_end": new Date(Date.parse("23 Oct 14:40:00 JDT")),
 
-        "#break2_start": new Date(Date.parse("23 Oct 14:40:00 IST")),
-        "#break2_end": new Date(Date.parse("23 Oct 14:45:00 IST")),
+        "#break2_start": new Date(Date.parse("23 Oct 14:40:00 JDT")),
+        "#break2_end": new Date(Date.parse("23 Oct 14:45:00 JDT")),
 
-        "#sec2_talk1_start": new Date(Date.parse("23 Oct 14:45:00 IST")),
-        "#sec2_talk1_end": new Date(Date.parse("23 Oct 15:15:00 IST")),
+        "#sec2_talk1_start": new Date(Date.parse("23 Oct 14:45:00 JDT")),
+        "#sec2_talk1_end": new Date(Date.parse("23 Oct 15:15:00 JDT")),
 
-        "#sec2_talk2_start": new Date(Date.parse("23 Oct 15:15:00 IST")),
-        "#sec2_talk2_end": new Date(Date.parse("23 Oct 15:45:00 IST")),
+        "#sec2_talk2_start": new Date(Date.parse("23 Oct 15:15:00 JDT")),
+        "#sec2_talk2_end": new Date(Date.parse("23 Oct 15:45:00 JDT")),
 
-        "#sec2_talk3_start": new Date(Date.parse("23 Oct 15:45:00 IST")),
-        "#sec2_talk3_end": new Date(Date.parse("23 Oct 16:15:00 IST")),
+        "#sec2_talk3_start": new Date(Date.parse("23 Oct 15:45:00 JDT")),
+        "#sec2_talk3_end": new Date(Date.parse("23 Oct 16:15:00 JDT")),
 
-        "#break3_start": new Date(Date.parse("23 Oct 16:15:00 IST")),
-        "#break3_end": new Date(Date.parse("23 Oct 16:20:00 IST")),
+        "#break3_start": new Date(Date.parse("23 Oct 16:15:00 JDT")),
+        "#break3_end": new Date(Date.parse("23 Oct 16:20:00 JDT")),
 
-        "#challenge5_start": new Date(Date.parse("23 Oct 16:20:00 IST")),
-        "#challenge5_end": new Date(Date.parse("23 Oct 16:40:00 IST")),
+        "#challenge5_start": new Date(Date.parse("23 Oct 16:20:00 JDT")),
+        "#challenge5_end": new Date(Date.parse("23 Oct 16:40:00 JDT")),
 
-        "#challenge6_start": new Date(Date.parse("23 Oct 16:40:00 IST")),
-        "#challenge6_end": new Date(Date.parse("23 Oct 17:00:00 IST")),
+        "#challenge6_start": new Date(Date.parse("23 Oct 16:40:00 JDT")),
+        "#challenge6_end": new Date(Date.parse("23 Oct 17:00:00 JDT")),
 
     }
     // blocks = {
