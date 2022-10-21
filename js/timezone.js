@@ -14,76 +14,97 @@ function setTimezone(tz) {
         minute: '2-digit'
     }
     schedule = {
-        "#intro_start": new Date(Date.parse("23 Oct 08:45:00 PDT")),
-        "#intro_end": new Date(Date.parse("23 Oct 09:00:00 PDT")),
+        "#intro_start": new Date(Date.parse("23 Oct 08:45:00 IST")),
+        "#intro_end": new Date(Date.parse("23 Oct 09:00:00 IST")),
 
-        "#sec1_talk1_start": new Date(Date.parse("23 Oct 09:00:00 PDT")),
-        "#sec1_talk1_end": new Date(Date.parse("23 Oct 09:30:00 PDT")),
+        "#sec1_talk1_start": new Date(Date.parse("23 Oct 09:00:00 IST")),
+        "#sec1_talk1_end": new Date(Date.parse("23 Oct 09:30:00 IST")),
 
-        "#sec1_talk2_start": new Date(Date.parse("23 Oct 09:30:00 PDT")),
-        "#sec1_talk2_end": new Date(Date.parse("23 Oct 10:00:00 PDT")),
+        "#sec1_talk2_start": new Date(Date.parse("23 Oct 09:30:00 IST")),
+        "#sec1_talk2_end": new Date(Date.parse("23 Oct 10:00:00 IST")),
 
-        "#sec1_talk3_start": new Date(Date.parse("23 Oct 10:00:00 PDT")),
-        "#sec1_talk3_end": new Date(Date.parse("23 Oct 10:30:00 PDT")),
+        "#sec1_talk3_start": new Date(Date.parse("23 Oct 10:00:00 IST")),
+        "#sec1_talk3_end": new Date(Date.parse("23 Oct 10:30:00 IST")),
 
-        "#break1_start": new Date(Date.parse("23 Oct 10:30:00 PDT")),
-        "#break1_end": new Date(Date.parse("23 Oct 11:45:00 PDT")),
+        "#break1_start": new Date(Date.parse("23 Oct 10:30:00 IST")),
+        "#break1_end": new Date(Date.parse("23 Oct 10:45:00 IST")),
 
-        "#challenge1_start": new Date(Date.parse("23 Oct 10:45:00 PDT")),
-        "#challenge1_end": new Date(Date.parse("23 Oct 11:25:00 PDT")),
+        "#challenge1_start": new Date(Date.parse("23 Oct 10:45:00 IST")),
+        "#challenge1_end": new Date(Date.parse("23 Oct 11:05:00 IST")),
 
-        "#challenge2_start": new Date(Date.parse("23 Oct 11:25:00 PDT")),
-        "#challenge2_end": new Date(Date.parse("23 Oct 12:05:00 PDT")),
+        "#challenge1_public_start": new Date(Date.parse("23 Oct 11:05:00 IST")),
+        "#challenge1_public_end": new Date(Date.parse("23 Oct 11:25:00 IST")),
 
-        "#lunch_start": new Date(Date.parse("23 Oct 12:05:00 PDT")),
-        "#lunch_end": new Date(Date.parse("23 Oct 12:30:00 PDT")),
+        "#challenge1_private_start": new Date(Date.parse("23 Oct 11:25:00 IST")),
+        "#challenge1_private_end": new Date(Date.parse("23 Oct 11:45:00 IST")),
 
-        "#challenge3_start": new Date(Date.parse("23 Oct 12:30:00 PDT")),
-        "#challenge3_end": new Date(Date.parse("23 Oct 13:10:00 PDT")),
+        "#lunch_start": new Date(Date.parse("23 Oct 11:45:00 IST")),
+        "#lunch_end": new Date(Date.parse("23 Oct 12:20:00 IST")),
 
-        "#challenge4_start": new Date(Date.parse("23 Oct 13:10:00 PDT")),
-        "#challenge4_end": new Date(Date.parse("23 Oct 13:50:00 PDT")),
+        "#challenge2_start": new Date(Date.parse("23 Oct 12:20:00 IST")),
+        "#challenge2_end": new Date(Date.parse("23 Oct 12:40:00 IST")),
 
-        "#challenge5_start": new Date(Date.parse("23 Oct 13:50:00 PDT")),
-        "#challenge5_end": new Date(Date.parse("23 Oct 14:30:00 PDT")),
+        "#challenge2_talk_start": new Date(Date.parse("23 Oct 12:40:00 IST")),
+        "#challenge2_talk_end": new Date(Date.parse("23 Oct 13:00:00 IST")),
 
-        "#break2_start": new Date(Date.parse("23 Oct 14:30:00 PDT")),
-        "#break2_end": new Date(Date.parse("23 Oct 14:45:00 PDT")),
+        "#challenge2_leaderboard_talk1_start": new Date(Date.parse("23 Oct 13:00:00 IST")),
+        "#challenge2_leaderboard_talk1_end": new Date(Date.parse("23 Oct 13:20:00 IST")),
 
-        "#sec2_talk1_start": new Date(Date.parse("23 Oct 14:45:00 PDT")),
-        "#sec2_talk1_end": new Date(Date.parse("23 Oct 15:15:00 PDT")),
+        "#challenge2_leaderboard_talk2_start": new Date(Date.parse("23 Oct 13:20:00 IST")),
+        "#challenge2_leaderboard_talk2_end": new Date(Date.parse("23 Oct 13:40:00 IST")),
 
-        "#sec2_talk2_start": new Date(Date.parse("23 Oct 15:15:00 PDT")),
-        "#sec2_talk2_end": new Date(Date.parse("23 Oct 15:45:00 PDT")),
+        "#challenge3_start": new Date(Date.parse("23 Oct 13:40:00 IST")),
+        "#challenge3_end": new Date(Date.parse("23 Oct 14:00:00 IST")),
 
-        "#sec2_talk3_start": new Date(Date.parse("23 Oct 15:45:00 PDT")),
-        "#sec2_talk3_end": new Date(Date.parse("23 Oct 16:15:00 PDT")),
+        "#challenge4_start": new Date(Date.parse("23 Oct 14:00:00 IST")),
+        "#challenge4_end": new Date(Date.parse("23 Oct 14:20:00 IST")),
 
-        "#panel_start": new Date(Date.parse("23 Oct 2022 16:15:00 PDT")),
-        "#panel_end": new Date(Date.parse("23 Oct 2022 17:00:00 PDT")),
+        "#challenge4_talk_start": new Date(Date.parse("23 Oct 14:20:00 IST")),
+        "#challenge4_talk_end": new Date(Date.parse("23 Oct 14:40:00 IST")),
+
+        "#break2_start": new Date(Date.parse("23 Oct 14:40:00 IST")),
+        "#break2_end": new Date(Date.parse("23 Oct 14:45:00 IST")),
+
+        "#sec2_talk1_start": new Date(Date.parse("23 Oct 14:45:00 IST")),
+        "#sec2_talk1_end": new Date(Date.parse("23 Oct 15:15:00 IST")),
+
+        "#sec2_talk2_start": new Date(Date.parse("23 Oct 15:15:00 IST")),
+        "#sec2_talk2_end": new Date(Date.parse("23 Oct 15:45:00 IST")),
+
+        "#sec2_talk3_start": new Date(Date.parse("23 Oct 15:45:00 IST")),
+        "#sec2_talk3_end": new Date(Date.parse("23 Oct 16:15:00 IST")),
+
+        "#break3_start": new Date(Date.parse("23 Oct 16:15:00 IST")),
+        "#break3_end": new Date(Date.parse("23 Oct 16:20:00 IST")),
+
+        "#challenge5_start": new Date(Date.parse("23 Oct 16:20:00 IST")),
+        "#challenge5_end": new Date(Date.parse("23 Oct 16:40:00 IST")),
+
+        "#challenge6_start": new Date(Date.parse("23 Oct 16:40:00 IST")),
+        "#challenge6_end": new Date(Date.parse("23 Oct 17:00:00 IST")),
 
     }
     // blocks = {
-    //   "#sec1_start" : new Date(Date.parse("28 Oct 2021 07:10:00 PDT")),
-    //   "#sec1_end" : new Date(Date.parse("28 Oct 2021 09:05:00 PDT")),
+    //   "#sec1_start" : new Date(Date.parse("28 Oct 2021 07:10:00 IST")),
+    //   "#sec1_end" : new Date(Date.parse("28 Oct 2021 09:05:00 IST")),
 
-    //   "#sec2_start" : new Date(Date.parse("28 Oct 2021 09:10:00 PDT")),
-    //   "#sec2_end" : new Date(Date.parse("28 Oct 2021 11:05:00 PDT")),
+    //   "#sec2_start" : new Date(Date.parse("28 Oct 2021 09:10:00 IST")),
+    //   "#sec2_end" : new Date(Date.parse("28 Oct 2021 11:05:00 IST")),
 
-    //   "#sec3_start" : new Date(Date.parse("28 Oct 2021 12:30:00 PDT")),
-    //   "#sec3_end" : new Date(Date.parse("28 Oct 2021 14:25:00 PDT")),
+    //   "#sec3_start" : new Date(Date.parse("28 Oct 2021 12:30:00 IST")),
+    //   "#sec3_end" : new Date(Date.parse("28 Oct 2021 14:25:00 IST")),
 
-    //   "#sec4_start" : new Date(Date.parse("28 Oct 2021 14:30:00 PDT")),
-    //   "#sec4_end" : new Date(Date.parse("28 Oct 2021 16:25:00 PDT")),
+    //   "#sec4_start" : new Date(Date.parse("28 Oct 2021 14:30:00 IST")),
+    //   "#sec4_end" : new Date(Date.parse("28 Oct 2021 16:25:00 IST")),
 
-    //   "#poster1_start" : new Date(Date.parse("28 Oct 2021 11:10:00 PDT")),
-    //   "#poster1_end" : new Date(Date.parse("28 Oct 2021 11:40:00 PDT")),
+    //   "#poster1_start" : new Date(Date.parse("28 Oct 2021 11:10:00 IST")),
+    //   "#poster1_end" : new Date(Date.parse("28 Oct 2021 11:40:00 IST")),
 
-    //   "#poster2_start" : new Date(Date.parse("28 Oct 2021 17:30:00 PDT")),
-    //   "#poster2_end" : new Date(Date.parse("28 Oct 2021 18:00:00 PDT")),
+    //   "#poster2_start" : new Date(Date.parse("28 Oct 2021 17:30:00 IST")),
+    //   "#poster2_end" : new Date(Date.parse("28 Oct 2021 18:00:00 IST")),
 
-    //   "#panel_start" : new Date(Date.parse("28 Oct 2021 16:30:00 PDT")),
-    //   "#panel_end" : new Date(Date.parse("28 Oct 2021 17:25:00 PDT")),
+    //   "#panel_start" : new Date(Date.parse("28 Oct 2021 16:30:00 IST")),
+    //   "#panel_end" : new Date(Date.parse("28 Oct 2021 17:25:00 IST")),
     // }
     var keys = Object.keys(schedule)
     for (var i = 0; i < keys.length; ++i) {
