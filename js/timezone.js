@@ -53,7 +53,7 @@ function setTimezone(tz) {
         "#challenge2_leaderboard_talk2_start": new Date(Date.parse("23 Oct 13:20:00 GMT+0200 (Israel Standard Time)")),
         "#challenge2_leaderboard_talk2_end": new Date(Date.parse("23 Oct 13:40:00 GMT+0200 (Israel Standard Time)")),
 
-        "#challenge3_start": new Date(Date.parse("23 Oct 13:40:00 JDT")),
+        "#challenge3_start": new Date(Date.parse("23 Oct 13:40:00 (Israel Standard Time)")),
         "#challenge3_end": new Date(Date.parse("23 Oct 14:00:00 GMT+0200 (Israel Standard Time)")),
 
         "#challenge4_start": new Date(Date.parse("23 Oct 14:00:00 GMT+0200 (Israel Standard Time)")),
