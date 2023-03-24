@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property='og:title' content='ECCV22 MVCS Challenge. Machine Visual Common Sense: Perception, Prediction, Planning' />
+    <meta property='og:title' content='CVPR2023 MVCS Workshop. Machine Visual Common Sense: Perception, Prediction, Planning' />
     <meta property='og:url' content='https://csail.mit.edu/mvcs' />
     <meta property="og:type" content="website" />
 
-    <title>ECCV22 MVCS Challenge</title>
+    <title>CVPR2023 MVCS</title>
 
     <!-- link to CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -60,15 +60,17 @@
         
         <hr>
         
+        <!--         
         <h1 id="winners">Challenge Winners & Papers</h1>
         Zuyao Chen, Jinlin Wu, Zhen Lei, Zhaoxiang Zhang, Changwen Chen, <a href="https://mvcs-workshop.github.io/data/v1.1-2.pdf">The Lame Can’t Go Far: Visual Stream Limits The Video Question Answering</a><br><br>
         Alice Hein, Klaus Diepold, <a href="https://mvcs-workshop.github.io/data/BIB_Challenge-1.pdf">Winning Solution of the BIB MVCS Challenge 2022</a><br><br>
         Xin Huang, Jung Jae Kim, Hui Li Tan, <a href="https://mvcs-workshop.github.io/data/ECCV_2022_MVCS_STAR_challenge_final.pdf">Comparing classification and generation approaches to situated reasoning with vision-language pre-trained models</a><br><br>
         Ziyi Wu, Nikita Dvornik, Klaus Greff, Thomas Kipf, Animesh Garg, <a href="https://mvcs-workshop.github.io/data/MVCS-SlotFormer.pdf">SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models</a>
+        -->
         
         <h1 id="challenges">Challenge Tracks</h1>
         <p>
-            There will be <b>six tracks</b> in the machine vision common sense challenge:
+            There will be <b>two core tracks</b> in the machine vision common sense challenge:
         </p>
 
         <div class="row">
@@ -84,15 +86,14 @@
             </div>
         </div>
         <div class="row">
-            <div style="border-color: #b30bb3;">
-                <h3 style="color: #b30bb3">AGENT: </h3>
-                <p style="color: #b30bb3">This track is on the <a href="https://www.tshu.io/AGENT/">AGENT benchmark</a> accepted by ICML2021. AGENT is a dataset for Machine Social Common Sense. It consists of a large dataset of procedurally generated 3D animations, AGENT (Action, Goal, Efficiency, coNstraint, uTility), structured around four scenarios (goal preferences, action efficiency, unobserved constraints, and cost-reward trade-offs) that probe key concepts of core intuitive psychology.</p>
-                <p><a class="downloadbtn" target="_blank" href="https://www.tshu.io/AGENT/">Download Link</a><br><a class="downloadbtn" target="_blank" href="https://eval.ai/web/challenges/challenge-page/1788/overview">Evaluation Server</a>
-                </p>
+            <div style="border-color: #540bb3">
+                <h3 style="color: #540bb3;">STAR:</h3>
+                <p style="color: #540bb3;">This track is the challenge on the <a href="http://star.csail.mit.edu/">STAR</a> (accepted by NeurIPS2021). Reasoning in the real world is not divorced from situations. A key challenge is to capture the present knowledge from surrounding situations and reason accordingly. STAR is a novel benchmark for Situated Reasoning, which provides challenging question-answering tasks, symbolic situation descriptions and logic-grounded diagnosis via real-world video situations.</p>
+                <p><a class="downloadbtn" target="_blank" href="http://star.csail.mit.edu/#repo">Downlaod Link</a><br><a class="downloadbtn" target="_blank" href="https://eval.ai/web/challenges/challenge-page/1325/leaderboard/3328/Mean">STAR Challenge Evaluation Server</a></p>
             </div>
             <div style="border-color: #540bb3">
                 <h3 style="color: #540bb3;">CLEVRER & ComPhy:</h3>
-                <p style="color: #540bb3;">This track is the challenge on the <a href="http://clevrer.csail.mit.edu/">CLEVRER</a> accepted by ICLR2020 and <a href="https://comphyreasoning.github.io">ComPhy dataset</a> accepted by ICLR 2022. CLEVRER is a diagnostic video dataset for systematic evaluation of computational models on a wide range of reasoning tasks. Motivated by the theory of human casual judgment, CLEVRER includes four types of question: descriptive (e.g., “what color"), explanatory (”what’s responsible for"), predictive (”what will happen next"), and counterfactual (“what if"). ComPhy takes a step further and requires machines to learn the new compositional visible and hidden physical properties from only a few examples. ComPhy includes three types of questions: factual questions for the composition between visible and hidden physical properties, counterfactual questions on objects’ physical properties like mass and charge, and predictive questions for objects’ future movement.</p>
+                <p style="color: #540bb3;">This track is the challenge on the <a href="http://clevrer.csail.mit.edu/">CLEVRER</a> (accepted by ICLR2020) and <a href="https://comphyreasoning.github.io">ComPhy dataset</a> (accepted by ICLR 2022). CLEVRER is a diagnostic video dataset for systematic evaluation of computational models on a wide range of reasoning tasks. Motivated by the theory of human casual judgment, CLEVRER includes four types of question: descriptive (e.g., “what color"), explanatory (”what’s responsible for"), predictive (”what will happen next"), and counterfactual (“what if"). ComPhy takes a step further and requires machines to learn the new compositional visible and hidden physical properties from only a few examples. ComPhy includes three types of questions: factual questions for the composition between visible and hidden physical properties, counterfactual questions on objects’ physical properties like mass and charge, and predictive questions for objects’ future movement.</p>
                 <p><a class="downloadbtn" target="_blank" href="http://clevrer.csail.mit.edu/#Dataset">Downlaod Link (CLEVRER)</a><br><a class="downloadbtn" target="_blank" href="https://comphyreasoning.github.io/#dataset">Downlaod Link (ComPhy)</a><br><a class="downloadbtn" target="_blank" href="https://eval.ai/web/challenges/challenge-page/667/overview">Evaluation Server (CLEVRER)</a><br><a class="downloadbtn" target="_blank" href="https://eval.ai/web/challenges/challenge-page/1770/overview">Evaluation Server (ComPhy)</a></p>
             </div>
         </div>
@@ -111,28 +112,33 @@
             </div>
         </div>
 
-<!--         <h1>Timeline</h1>
+       <h1>Timeline</h1>
         <ul class="timeline">
             <li>
-                <p>ECCV Workshop</p>
-                <label>Oct 23, 2022</label>
+                <p>Workshop</p>
+                <label>June 18-22, 2023 (depend on the CVPR schedule)</label>
             </li>
             <li>
                 <p>Challenge Submission Deadlines</p>
-                <label>Sep 2022. Check each challenge for the specific date.</label>
+                <label>May 20, 2023. Check each challenge for the specific date.</label>
             </li>
             <li>
                 <p>Notification of Winner & Paper Invitation Deadline</p>
-                <label>Oct 7, 2022 (Anywhere on Earth)</label>
+                <label>before June 1, 2023 (Anywhere on Earth)</label>
             </li>
+            <!-- 
             <li>
                 <p>Paper Submission Deadline. <a href="https://cmt3.research.microsoft.com/MVCSWS2022/">Submission site</a></p>
-                <label>Oct 14, 2022 (Anywhere on Earth)</label>
+                <label>XXXX, 2023 (Anywhere on Earth)</label>
             </li>
+            -->
         </ul>
-        <hr> -->
+        
+        
         <h1 id="speakers">Invited Speakers</h1>
         <div class="orgs">
+            <a>To be continue</a>
+            <!-- 
             <div>
                 <a href="https://jiajunwu.com" target="_blank">
                     <div style="background-image: url('./data/Jiajun.jpeg')"></div>
@@ -147,34 +153,8 @@
                     <label>MIT</label>
                 </a>
             </div>
-            <div>
-                <a href="https://ed.stanford.edu/faculty/nhaber" target="_blank">
-                    <div style="background-image: url('./data/nhaber.jpeg')"></div>
-                    <p>Nick Haber</p>
-                    <label>Stanford</label>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.psych.ucla.edu/faculty-page/taogao" target="_blank">
-                    <div style="background-image: url('./data/Gao.jpeg')"></div>
-                    <p>Tao Gao</p>
-                    <label>UCLA</label>
-                </a>
-            </div>
-            <div>
-                <a href="https://as.nyu.edu/content/nyu-as/as/faculty/Moira-Dillon.html" target="_blank">
-                    <div style="background-image: url('./data/Moira.jpeg')"></div>
-                    <p>Moira Dillon</p>
-                    <label>NYU</label>
-                </a>
-            </div>
-            <div>
-                <a href="https://people.eecs.berkeley.edu/~malik" target="_blank">
-                    <div style="background-image: url('./data/malik.jpeg')"></div>
-                    <p>Jitendra Malik</p>
-                    <label>UC Berkeley</label>
-                </a>
-            </div>
+            -->
+
         </div>
         <hr>
 
@@ -243,39 +223,6 @@
                     <label>Tsinghua University</label>
                 </a>
             </div>
-        </div>
-        <hr>
-        <h1>Senior Organizers</h1>
-        <h2 id="organizers">Senior Organizers</h2>
-        <div class="orgs">
-            <div>
-                <a href="http://web.mit.edu/cocosci/josh.html" target="_blank">
-                    <div style="background-image: url('./data/josh.jpeg')"></div>
-                    <p>Joshua B. Tenenbaum</p>
-                    <label>MIT</label>
-                </a>
-            </div>
-            <div>
-                <a href="https://groups.csail.mit.edu/vision/torralbalab/" target="_blank">
-                    <div style="background-image: url('./data/antonio.jpg')"></div>
-                    <p>Antonio Torralba</p>
-                    <label>MIT</label>
-                </a>
-            </div>
-            <div>
-                <a href="http://stanford.edu/~yamins/" target="_blank">
-                    <div style="background-image: url('./data/dan.jpeg')"></div>
-                    <p>Dan Yamins</p>
-                    <label>Stanford</label>
-                </a>
-            </div>
-            <div>
-                <a href="https://psychology.ucsd.edu/people/profiles/jefan.html" target="_blank">
-                    <div style="background-image: url('./data/judith.jpg')"></div>
-                    <p>Judith Fan</p>
-                    <label>UCSD</label>
-                </a>
-            </div>
             <div>
                 <a href="https://people.csail.mit.edu/ganchuang" target="_blank">
                     <div style="background-image: url('./data/chuang.jpeg')"></div>
@@ -284,6 +231,9 @@
                 </a>
             </div>
         </div>
+        <hr>
+        
+  
         <h1 id="contact">Contact Info</h1>
         <p>E-mail:
             <a href="mailto:yininghong@cs.ucla.edu" target="_blank">yininghong@cs.ucla.edu</a>
