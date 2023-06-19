@@ -32,8 +32,8 @@ function setTimezone(tz) {
         "#sec1_talk4_start": new Date(Date.parse("19 Jun 15:20:00 GMT-0700 (Pacific Daylight Time)")),
         "#sec1_talk4_end": new Date(Date.parse("19 Jun 16:00:00 GMT-0700 (Pacific Daylight Time)")),
 
-        "#sec1_talk5_start": new Date(Date.parse("19 Jun 16:00:00 GMT-0700 (Pacific Daylight Time)")),
-        "#sec1_talk5_end": new Date(Date.parse("19 Jun 16:40:00 GMT-0700 (Pacific Daylight Time)")),
+        "#challenge1_start": new Date(Date.parse("19 Jun 16:00:00 GMT-0700 (Pacific Daylight Time)")),
+        "#challenge1_end": new Date(Date.parse("19 Jun 17:00:00 GMT-0700 (Pacific Daylight Time)")),
     }
     // blocks = {
     //   "#sec1_start" : new Date(Date.parse("28 Oct 2021 07:10:00 IST")),
